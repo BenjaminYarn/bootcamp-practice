@@ -1,0 +1,60 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>The website</title>
+    <style>
+    body {
+        background-color: orange
+    }
+    h1 {
+    color: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    font-family: Arial, Helvetica;
+    background-color: white;
+    }
+    body {
+    text-align: center;
+    }
+    
+h2 {
+    color: green;
+    font-family: Arial, Helvetica;
+    background-color: gray;
+    }
+    body {
+    text-align: center;
+    }
+    
+p {
+    color: greenyellow;
+    font-family: Arial, Helvetica;
+    background-color: gray;
+    }
+    body {
+    text-align: left;
+    }
+    </style>
+    </head>
+
+<body>
+    <h1>Welcome to the website!</h1>
+        <hr>
+    <h2>Where would you like to go?</h2>
+        <p><a href = "{% url 'ben_facts' %}"><b>Facts about Ben</b></a></p>
+        <p><a href = " {% url 'cv_page' %} "><b>Ben's CV</b></a></p>
+        <hr>
+    <h2>How much do you love this colour scheme?</h2>
+        <form>
+            <select>
+                <option>I LOOOVVVVEEEE ITTTT</option>
+                <option>I hate it, it hurts my eyes</option>
+                <option>Why didn't your rainbow title work?"</option>
+            </select>
+        </form>
+
+</body>
+
+</html>
